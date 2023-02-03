@@ -1,24 +1,27 @@
 # Network Scanner
 A Python script to perform network scanning similar to Nmap and display the port number and service name running on that port. This script is designed to be faster with basic multithreading.
 
-# Usage
+## Usage
 
 python network_scanner.py <hostname or IP>
   
-# Requirements
+## Requirements
 Python 3
   
-# Features
+## Features
 Perform network scanning on a host or IP
 Display port number and service name running on that port
 Basic multithreading for improved speed
   
-# Example Output
-$ python network_scanner.py 192.168.0.1
-
-Scanning Host: 192.168.0.1
-
-PORT   SERVICE
-22     ssh
-80     http
-443    https
+## Example Output
+```bash
++--------------------+
+| !! Port Scanner !! |
++--------------------+
+--------------------------------------------------
+Scanning Target: 192.168.1.6
+Scanning started at: 2023-02-03 12:08:48.785490
+--------------------------------------------------
+Port 139 is open: netbios-ssn
+Port 135 is open: epmap
+Port 445 is open: microsoft-ds
